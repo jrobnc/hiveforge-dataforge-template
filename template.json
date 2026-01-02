@@ -1,0 +1,38 @@
+{
+  "id": "dataforge",
+  "name": "DataForge Analytics",
+  "description": "Multi-database analytics platform with real-time dashboards and data connectors.",
+  "version": "1.0.0",
+  "category": "analytics",
+  "features": [
+    "Multi-tenant analytics",
+    "Real-time dashboards",
+    "Database connectors (PostgreSQL, MySQL, MongoDB)",
+    "Query builder interface",
+    "Data visualization charts",
+    "Export to CSV/Excel",
+    "Scheduled reports",
+    "Role-based access control"
+  ],
+  "tech_stack": {
+    "frontend": [
+      "Next.js 14",
+      "React",
+      "TypeScript",
+      "TailwindCSS",
+      "Recharts"
+    ],
+    "backend": [
+      "FastAPI",
+      "Python",
+      "SQLAlchemy"
+    ],
+    "infrastructure": [
+      "Supabase",
+      "Railway"
+    ]
+  },
+  "difficulty": "intermediate",
+  "estimated_setup_time": 20,
+  "created_at": "2026-01-02T20:50:37.219649"
+}
