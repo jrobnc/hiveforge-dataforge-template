@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bqm2-engine"
+version = "1.0.0"
+description = "BigQuery Materializer 2 - SQL orchestration engine"
+authors = [
+    {name = "DataForge Team"}
+]
+dependencies = [
+    "google-cloud-bigquery>=3.11.0",
+    "google-cloud-storage>=2.10.0",
+    "pyyaml>=6.0",
+    "python-dateutil>=2.8.2",
+]
+requires-python = ">=3.8"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-asyncio>=0.21.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["bqm2*"]
+
+[tool.setuptools.package-dir]
+"" = "src"
